@@ -25,13 +25,8 @@ describe('Meu Primeiro Teste', () => {
     //Inserir o segundo nome
     cy.get('input#lastName.sc-dSCufp.egyFrY').click().type("QQA")
 
-    //Sexo 
-    
-    cy.get('li\x30.sc-hZDyAQ hEWFcA')
+    //Sexo
 
-      // cy.get('input#sc-ibQAlb.cTitmG').click()
-      // // Use o método invoke para definir o valor do atributo placeholder
-      // .invoke('placeholder');
 
     
 
