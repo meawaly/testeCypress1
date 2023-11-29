@@ -25,9 +25,10 @@ describe('Meu Primeiro Teste', () => {
     //Inserir o segundo nome
     cy.get('input#lastName.sc-dSCufp.egyFrY').click().type("QQA")
 
-    //Sexo
+//Teste funcionalidade
 
-
+    cy.get('input#gender.sc-jaXxmE.bBduzH').should('be.visible').click();
+    cy.get('input#gender.sc-jaXxmE.bBduzH').should('be.visible').type("Masculino");
     
 
 
