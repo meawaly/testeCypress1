@@ -1,35 +1,28 @@
-// const { type } = require("cypress/types/jquery");
-
 describe('Meu Primeiro Teste', () => {
   it('Deve verificar o título da página', () => {
     // Visita a URL da página que você quer testar
-    cy.visit('https://portal-hml.tismoo.me');
+    cy.visit('https://portal-hml.logsyst.com.br/');
 
     //Realizar login
-    cy.get('.sc-bypJrT > #email').click().type("aabatista@viptech.com.br")
-    cy.get('.sc-bypJrT > #password').click().type("1234@5678a")
-    cy.get('.fTNabx').click()
+    cy.get('.sc-dSCufp > #email').click().type("coorp100@saopaulo.com.br")
+    cy.get('.sc-dSCufp > #password').click().type("@devsViptech1")
+    cy.get('.sc-fPXMVe').click()
 
-    //Acessar opção "Perfil de saúde" 
-    cy.get('[href="/patient-profiles"] > .sc-kgOKUu').click()
+  
 
-    //Validade se apareceu o modal 
-    cy.contains('Adicionar Perfil de Saúde')
-
-    //Adicionar perfil de saúde
-    cy.get('.sc-cXPBUD > .sc-eDPEul').click()
-
-    //Inserir o primeiro nome 
-    cy.get('input#name.sc-dSCufp.egyFrY').click().type("TEST QA")
-
-    //Inserir o segundo nome
-    cy.get('input#lastName.sc-dSCufp.egyFrY').click().type("QQA")
-
-//Teste funcionalidade
-
-    cy.get('input#gender.sc-jaXxmE.bBduzH').should('be.visible').click();
-    cy.get('input#gender.sc-jaXxmE.bBduzH').should('be.visible').type("Masculino");
+    //Acessar painel de frotas 
+    cy.get(':nth-child(2) > .sc-gweoQa').click()
     
+   // Input mapa
+   cy.get('.sc-hIUJlX').click().type("Guarulhos")
+   
+   //Acessar Acomp. Manifesto 
+   cy.get(':nth-child(3) > .sc-gweoQa').click()
+
+   
+
+   //Preencher o input Acomp. Manifesto 
+   cy.get('input.sc-hIUJlX.hvqfHQ').click().type("GESU5988650") //jeito certo de preencher um input 
 
 
 
