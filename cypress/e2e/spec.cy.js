@@ -5,7 +5,7 @@ describe('Meu Primeiro Teste', () => {
 
     //Realizar login
     cy.get('.sc-dSCufp > #email').click().type("coorp100@saopaulo.com.br")
-    cy.get('.sc-dSCufp > #password').click().type("@devsViptech1")
+    cy.get('.sc-dSCufp > #password').click().type("devsViptech1")
     cy.get('.sc-fPXMVe').click()
 
   
