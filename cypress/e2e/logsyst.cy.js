@@ -1,11 +1,11 @@
 describe('Meu Primeiro Teste', () => {
   it('Deve verificar o título da página', () => {
     // Visita a URL da página que você quer testar
-    cy.visit('https://portal-hml.logsyst.com.br/');
+    cy.visit('https://portal-hml.tismoo.me/');
 
     //Realizar login
-    cy.get('.sc-dSCufp > #email').click().type("coorp100@saopaulo.com.br")
-    cy.get('.sc-dSCufp > #password').click().type("devsViptech1")
+    cy.get('.sc-dSCufp > #email').click().type("aabatista@viptech.com.br")
+    cy.get('.sc-dSCufp > #password').click().type("1234@5678a")
     cy.get('.sc-fPXMVe').click()
 
   
